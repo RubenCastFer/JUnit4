@@ -50,7 +50,7 @@ public class MainTest {
 	}
 	@Before
 	public void before() {
-		u1 = new Usuario("Juana",Main.getFecha("05-09-1985"));	
+		u1 = new Usuario("Marcos",Main.getFecha("06-01-2003"));	
 	}
 	
 	@After
@@ -60,13 +60,13 @@ public class MainTest {
 	
 	@Test
 	public void testGetNombre() {
-		assertEquals("Juana", u1.getNombre());
+		assertEquals("Marcos", u1.getNombre());
 	}
 	
 	@Test
 	public void testSetNombre() {
-		u1.setNombre("Lidia");
-		assertEquals("Lidia", u1.getNombre());
+		u1.setNombre("Ruel");
+		assertEquals("Ruel", u1.getNombre());
 	}
 	
 	@Test
@@ -77,8 +77,8 @@ public class MainTest {
 	
 	@Test
 	public void testSetGetFecha() {
-		u1.setFechaNacimiento("01-08-2000");
-		assertEquals("01-08-2000", u1.getFechaNacimiento());
+		u1.setFechaNacimiento("01-01-1996");
+		assertEquals("01-01-1996", u1.getFechaNacimiento());
 	}
 
 	@Test(timeout = 100)
